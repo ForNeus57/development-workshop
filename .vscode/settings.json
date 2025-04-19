@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "${workspaceFolder:development-workshop}/database/cochrane_reviews.db",
+      "name": "reviews"
+    }
+  ]
+}
