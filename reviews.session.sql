@@ -1,6 +1,7 @@
-SELECT r.id, r.title, COUNT(a.name) AS author_count
+
+-- Test query - retrieves the names of authors and the number of reviews they have written, ordered by the number of reviews in descending order.
+SELECT a.name, COUNT(a.name) AS author_count
 FROM reviews r
 JOIN authors a ON r.id = a.review_id
-GROUP BY r.id
-HAVING author_count > 3
+GROUP BY a.name
 ORDER BY author_count DESC;
